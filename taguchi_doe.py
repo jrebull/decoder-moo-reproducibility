@@ -209,7 +209,7 @@ def main():
         "A_pop": "A: population $N$",
         "B_iter": "B: iteration budget $T$",
         "C_archive": "C: archive size",
-        "D_beta": r"D: L\'evy exponent $\beta$",
+        "D_beta": r"D: Lévy exponent $\beta$",
     }
     fig, axes = plt.subplots(1, 4, figsize=(11, 2.8), sharey=True)
     for ax, fac in zip(axes, FACTORS):
