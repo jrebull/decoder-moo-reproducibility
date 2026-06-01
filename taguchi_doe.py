@@ -20,7 +20,7 @@ benchmark seeds 1-71 to avoid contamination).
 Outputs:
   app/data/results/taguchi.json          (full DOE: array, per-config HV, S/N,
                                            response tables, optimum, confirmation)
-  ../MICAI/figures/taguchi_main_effects.pdf   (S/N main-effects plot, vectorial)
+  ../figures/taguchi_main_effects.pdf   (S/N main-effects plot, vectorial)
 """
 import json
 import time
@@ -37,7 +37,7 @@ from app.core.problem import VisaProblem
 from app.core.mohho import run_mohho, compute_hypervolume
 
 RESULTS = Path("app/data/results")
-FIGDIR = Path("../MICAI/figures")
+FIGDIR = Path("../figures")
 REPS = 12                      # replicate seeds per configuration
 SEED0 = 200                    # replicate seeds: 200 .. 200+REPS-1
 

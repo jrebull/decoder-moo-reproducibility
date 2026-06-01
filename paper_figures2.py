@@ -16,7 +16,7 @@ from app.core.fifo import run_baseline
 from app.core.mohho import run_mohho, evaluate_hawk
 
 plt.rcParams.update({"font.family": "serif", "font.size": 9, "savefig.bbox": "tight"})
-FIG = Path("../MICAI/figures")
+FIG = Path("../figures")
 R = Path("app/data/results")
 BLUE, RED, GREEN, GREY = "#2E86DE", "#E74C3C", "#27AE60", "#9AA3AF"
 

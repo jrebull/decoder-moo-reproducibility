@@ -1,7 +1,7 @@
 """Figure: SBX crossover spread (eta_c) sweep -- operator order-preservation tau and
 real-coded NSGA-II mean hypervolume, showing that NO eta_c lifts the GA above the
 random-key ceiling and that tau and HV are perfectly anti-correlated.
-Output: ../MICAI/figures/eta_sweep.pdf"""
+Output: ../figures/eta_sweep.pdf"""
 import json
 from pathlib import Path
 import numpy as np
@@ -10,7 +10,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 R = Path("app/data/results")
-FIG = Path("../MICAI/figures")
+FIG = Path("../figures")
 e = json.load(open(R / "eta_sweep.json"))
 sw = e["sweep"]
 eta = [r["eta_c"] for r in sw]

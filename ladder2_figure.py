@@ -3,7 +3,7 @@
 Mirrors ladder_figure.py but reads second_problem.json. Shows the real-coded
 NSGA-II and random restart at the bottom and permutation-NSGA-II at the top---as
 on the visa problem---while the real-coded Harris Hawks optimizer is competitive,
-so the clean two-tier split is structure-specific.  -> ../MICAI/figures/ladder2.pdf
+so the clean two-tier split is structure-specific.  -> ../figures/ladder2.pdf
 """
 import json
 from pathlib import Path
@@ -40,5 +40,5 @@ lo = ax.get_ylim()[0]
 ax.text(2.0, lo, "random-key encoding", ha="center", va="bottom", fontsize=7.5, color="#9C5410")
 ax.text(5.0, lo, "permutation-native (3 paradigms)", ha="center", va="bottom", fontsize=7.5, color="#1B5E9C")
 ax.grid(axis="y", alpha=0.25)
-fig.savefig("../MICAI/figures/ladder2.pdf"); fig.savefig("../MICAI/figures/ladder2.png", dpi=200)
+fig.savefig("../figures/ladder2.pdf"); fig.savefig("../figures/ladder2.png", dpi=200)
 print("saved MOMKP ladder2 | means:", [f"{float(np.mean(x)):.4f}" for x in data])

@@ -1,9 +1,9 @@
 """
-Publication figures for the MICAI/LNCS paper. English labels, vectorial PDF
+Publication figures for the LNCS paper. English labels, vectorial PDF
 (plus PNG backup), serif fonts to match the Springer LNCS body text.
 
 Reads only released artifacts (CSV/JSON in app/data/results) so every figure is
-reproducible. Outputs to ../MICAI/figures/.
+reproducible. Outputs to ../figures/.
 
 Figures:
   convergence.pdf     HV mean +/- std vs iteration (30 runs), early-saturation markers
@@ -36,7 +36,7 @@ plt.rcParams.update({
 })
 
 R = Path("app/data/results")
-FIG = Path("../MICAI/figures")
+FIG = Path("../figures")
 FIG.mkdir(parents=True, exist_ok=True)
 BLUE, ORANGE, RED, GREY = "#2E86DE", "#E67E22", "#E74C3C", "#9AA3AF"
 millions = FuncFormatter(lambda x, _: f"{x/1e6:.2f}")

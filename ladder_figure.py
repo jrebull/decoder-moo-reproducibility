@@ -2,7 +2,7 @@
 instance (same 25k-eval budget, same feasibility-preserving decoder), ordered to
 show that the representation-operator match -- not the metaheuristic family --
 governs performance. Three permutation-native paradigms (swarm, decomposition,
-GA) cluster at the top. -> ../MICAI/figures/ladder.pdf"""
+GA) cluster at the top. -> ../figures/ladder.pdf"""
 import json
 from pathlib import Path
 import numpy as np
@@ -45,5 +45,5 @@ lo = ax.get_ylim()[0]
 ax.text(2.0, lo, "random-key encoding", ha="center", va="bottom", fontsize=7.5, color="#9C5410")
 ax.text(5.0, lo, "permutation-native (3 paradigms)", ha="center", va="bottom", fontsize=7.5, color="#1B5E9C")
 ax.grid(axis="y", alpha=0.25)
-fig.savefig("../MICAI/figures/ladder.pdf"); fig.savefig("../MICAI/figures/ladder.png", dpi=200)
+fig.savefig("../figures/ladder.pdf"); fig.savefig("../figures/ladder.png", dpi=200)
 print("saved 6-method ladder | means:", [f"{float(np.mean(x))*1e6:,.0f}" for x in data])

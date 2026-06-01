@@ -1,4 +1,4 @@
-"""Alternative fairness audit for the MICAI visa case study.
+"""Alternative fairness audit for the the paper visa case study.
 
 This script recomputes the 30-seed MOHHO combined front and evaluates external
 country-level fairness metrics that are not optimized directly:

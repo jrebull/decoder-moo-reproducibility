@@ -11,7 +11,7 @@ USO:
   con el resto de cifras del paper).
 - tex_number_inventory(): lista todos los tokens numericos del .tex para cablearlos.
 
-NOTA: los paper_value de abajo provienen del PDF MICAI. Ajusta/expande segun el
+NOTA: los paper_value de abajo provienen del PDF the paper. Ajusta/expande segun el
 .tex real. n_mismatch>0 => hay cifras sin respaldo o stale.
 """
 import os, re, json, argparse
@@ -199,7 +199,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--results", default=_bootstrap.results_dir())
     ap.add_argument("--tex", default=None,
-                    help="dir del paper LaTeX (MICAI/) para inventario de numeros")
+                    help="dir del paper LaTeX (the paper) para inventario de numeros")
     a = ap.parse_args()
     rows, n_mismatch = check(a.results)
     inv = tex_number_inventory(a.tex) if a.tex else []

@@ -1,4 +1,4 @@
-"""Permutation SPEA2 baseline for the MICAI visa ladder.
+"""Permutation SPEA2 baseline for the the paper visa ladder.
 
 SPEA2 adds an indicator-free, strength-based evolutionary baseline to the
 existing dominance (NSGA-II), decomposition (MOEA/D), and swarm (Discrete-MOHHO)
