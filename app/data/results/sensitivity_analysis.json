@@ -1,0 +1,37 @@
+{
+  "archive_sensitivity": {
+    "seed": 42,
+    "archive_100": {
+      "solutions": 43,
+      "hv": 297177.55,
+      "saturated": false
+    },
+    "archive_200": {
+      "solutions": 43,
+      "hv": 297177.55,
+      "saturated": false
+    },
+    "archive_500": {
+      "solutions": 43,
+      "hv": 297177.55,
+      "saturated": false
+    },
+    "hv_delta_100_vs_200": "0.00%",
+    "hv_delta_100_vs_500": "0.00%"
+  },
+  "convergence_analysis": {
+    "final_hv": 302756.09,
+    "iter_95pct": 5,
+    "iter_99pct": 135,
+    "hv_iter_300": 302400.68,
+    "hv_gain_300_to_500": "0.12%"
+  },
+  "f1_range_analysis": {
+    "f1_range": 0.211,
+    "f2_range": 11.0,
+    "f3_range": 680.0,
+    "f1_normalized_width": 0.0211,
+    "f2_normalized_width": 0.6875,
+    "f1_vs_f2_ratio": 32.6
+  }
+}

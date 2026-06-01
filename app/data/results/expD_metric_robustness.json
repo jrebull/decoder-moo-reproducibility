@@ -1,0 +1,230 @@
+{
+  "validation": {
+    "mohho_meanHV_regen_vs_stored": [
+      302379.3,
+      302379.3
+    ]
+  },
+  "D1_refpoint_sweep": {
+    "baseline_(10,16,20000)": {
+      "ref_point": [
+        10.0,
+        16.0,
+        20000.0
+      ],
+      "per_run_hv_mean": {
+        "mohho_realcoded": 302379.28292461723,
+        "nsga2_realcoded": 293367.0994345366,
+        "random_restart": 309821.2001914635,
+        "perm_nsga2": 318151.3280846883,
+        "perm_moead": 314846.2364806625,
+        "discrete_mohho": 316636.7174273803
+      },
+      "ranking": [
+        "perm_nsga2",
+        "discrete_mohho",
+        "perm_moead",
+        "random_restart",
+        "mohho_realcoded",
+        "nsga2_realcoded"
+      ],
+      "perm_tier_above_rk_tier": true,
+      "rank_of_random_restart": 4,
+      "rank_of_mohho": 5
+    },
+    "fitted_(9.1,13.5,2100)": {
+      "ref_point": [
+        9.1,
+        13.5,
+        2100.0
+      ],
+      "per_run_hv_mean": {
+        "mohho_realcoded": 5064.096552661951,
+        "nsga2_realcoded": 4888.894882946541,
+        "random_restart": 5201.8379294515125,
+        "perm_nsga2": 5511.259703143361,
+        "perm_moead": 5251.630255157833,
+        "discrete_mohho": 5454.473970581773
+      },
+      "ranking": [
+        "perm_nsga2",
+        "discrete_mohho",
+        "perm_moead",
+        "random_restart",
+        "mohho_realcoded",
+        "nsga2_realcoded"
+      ],
+      "perm_tier_above_rk_tier": true,
+      "rank_of_random_restart": 4,
+      "rank_of_mohho": 5
+    },
+    "tight_(9.0,13.2,1000)": {
+      "ref_point": [
+        9.0,
+        13.2,
+        1000.0
+      ],
+      "per_run_hv_mean": {
+        "mohho_realcoded": 1273.7644838647798,
+        "nsga2_realcoded": 1229.8270697266728,
+        "random_restart": 1308.970605084992,
+        "perm_nsga2": 1422.6317127580344,
+        "perm_moead": 1302.4088861010678,
+        "discrete_mohho": 1401.3373268865796
+      },
+      "ranking": [
+        "perm_nsga2",
+        "discrete_mohho",
+        "random_restart",
+        "perm_moead",
+        "mohho_realcoded",
+        "nsga2_realcoded"
+      ],
+      "perm_tier_above_rk_tier": false,
+      "rank_of_random_restart": 3,
+      "rank_of_mohho": 5
+    },
+    "mid_(9.5,14.5,8000)": {
+      "ref_point": [
+        9.5,
+        14.5,
+        8000.0
+      ],
+      "per_run_hv_mean": {
+        "mohho_realcoded": 59401.58718803769,
+        "nsga2_realcoded": 57451.34413212172,
+        "random_restart": 61014.393566516424,
+        "perm_nsga2": 63155.271256356835,
+        "perm_moead": 62017.063638311854,
+        "discrete_mohho": 62759.68846410198
+      },
+      "ranking": [
+        "perm_nsga2",
+        "discrete_mohho",
+        "perm_moead",
+        "random_restart",
+        "mohho_realcoded",
+        "nsga2_realcoded"
+      ],
+      "perm_tier_above_rk_tier": true,
+      "rank_of_random_restart": 4,
+      "rank_of_mohho": 5
+    },
+    "f3_collapsed_(9.1,13.5,700)": {
+      "ref_point": [
+        9.1,
+        13.5,
+        700.0
+      ],
+      "per_run_hv_mean": {
+        "mohho_realcoded": 1687.0099995648,
+        "nsga2_realcoded": 1624.944917883939,
+        "random_restart": 1733.3773774328267,
+        "perm_nsga2": 1833.9789560860188,
+        "perm_moead": 1749.26634957712,
+        "discrete_mohho": 1817.1746361699554
+      },
+      "ranking": [
+        "perm_nsga2",
+        "discrete_mohho",
+        "perm_moead",
+        "random_restart",
+        "mohho_realcoded",
+        "nsga2_realcoded"
+      ],
+      "perm_tier_above_rk_tier": true,
+      "rank_of_random_restart": 4,
+      "rank_of_mohho": 5
+    }
+  },
+  "D1_tiers_preserved_all_refpoints": false,
+  "D2_reference_free_metrics": {
+    "Z_size": 190,
+    "Z_from": "union no-dominada de los SEIS frentes combinados",
+    "IGD_plus": {
+      "mohho_realcoded": 0.005578287979634207,
+      "nsga2_realcoded": 0.00948618111388666,
+      "random_restart": 0.015810323874041875,
+      "perm_nsga2": 0.0024770550687453863,
+      "perm_moead": 0.010534057517464833,
+      "discrete_mohho": 0.00495684473796711
+    },
+    "epsilon_additive": {
+      "mohho_realcoded": 0.042000818181818195,
+      "nsga2_realcoded": 0.05446152250211389,
+      "random_restart": 0.048120645239367765,
+      "perm_nsga2": 0.019307906429917532,
+      "perm_moead": 0.045384602085100034,
+      "discrete_mohho": 0.04197718181818179
+    },
+    "IGD_plus_ranking": [
+      "perm_nsga2",
+      "discrete_mohho",
+      "mohho_realcoded",
+      "nsga2_realcoded",
+      "perm_moead",
+      "random_restart"
+    ],
+    "epsilon_ranking": [
+      "perm_nsga2",
+      "discrete_mohho",
+      "mohho_realcoded",
+      "perm_moead",
+      "random_restart",
+      "nsga2_realcoded"
+    ]
+  },
+  "D2_IGDplus_tier_preserved": false,
+  "D2_epsilon_tier_preserved": false,
+  "D3_f2_sensitivity": {
+    "mohho_realcoded": {
+      "hv_full": 321445.87704640074,
+      "hv_f2only": 321300.00000000023,
+      "f2only_over_full": 0.9995
+    },
+    "nsga2_realcoded": {
+      "hv_full": 316059.6988217989,
+      "hv_f2only": 318384.2750000002,
+      "f2only_over_full": 1.0074
+    },
+    "random_restart": {
+      "hv_full": 316383.0721938204,
+      "hv_f2only": 311205.45600000006,
+      "f2only_over_full": 0.9836
+    },
+    "perm_nsga2": {
+      "hv_full": 321935.27431078785,
+      "hv_f2only": 324916.62000000005,
+      "f2only_over_full": 1.0093
+    },
+    "perm_moead": {
+      "hv_full": 320968.9626451785,
+      "hv_f2only": 310476.46,
+      "f2only_over_full": 0.9673
+    },
+    "discrete_mohho": {
+      "hv_full": 321354.0831622783,
+      "hv_f2only": 321797.8400000002,
+      "f2only_over_full": 1.0014
+    }
+  },
+  "D3_mean_hv_f2only_over_full": 0.9948,
+  "D3_note": "Si HV(f2-only)/HV(full) ~ 1, el HV esta casi enteramente determinado por la cobertura de f2 -> el claim aplica al eje f2.",
+  "H_met_verdict": "PARCIAL (mezcla honesta). (a) ROBUSTO -> refuta el artefacto de ref inflado: el ranking de cabeza es estable al reference point (perm-NSGA-II #1 en 5/5; random restart SUPERA a MOHHO real-coded en 5/5; tier perm>rk en 4/5, rompe solo bajo el ref mas apretado). 'random restart competitivo' NO es artefacto de un HV insensible. (b) CONFIRMADO PARCIALMENTE -> acota el alcance: el HV esta determinado en ~99.5% por la cobertura de f2 (fijando f1,f3 a medianas se recupera casi todo el HV), de modo que el indicador HV discrimina esencialmente via el eje f2; y bajo IGD+/epsilon (sin reference point) sobre los frentes COMBINADOS el orden estricto de tiers no se preserva (artefacto de que los frentes combinados convergen casi al mismo Z). Recomendacion: reportar IGD+/epsilon junto al HV y declarar que el HV discrimina por f2 -- el claim basado en HV aplica al eje de disparidad f2, consistente con que f2 es la unica dimension ancha (Exp B).",
+  "elapsed_s": 564.8015639781952,
+  "H_met_breakdown": {
+    "rankings_robust_to_refpoint": true,
+    "random_restart_beats_mohho_in_n_of_refs": [
+      5,
+      5
+    ],
+    "perm_tier_above_rk_in_n_of_refs": [
+      4,
+      5
+    ],
+    "hv_is_f2_driven_fraction": 0.9948,
+    "strict_tier_preserved_under_IGDplus": false,
+    "strict_tier_preserved_under_epsilon": false,
+    "note": "IGD+/epsilon sobre frentes COMBINADOS (convergen al mismo Z); el tier es un fenomeno PER-RUN, no de frente combinado."
+  }
+}

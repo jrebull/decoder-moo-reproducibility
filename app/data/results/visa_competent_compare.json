@@ -1,0 +1,28 @@
+{
+  "budget": {
+    "pop": 50,
+    "gen": 500,
+    "evals": 25000,
+    "seeds": 30
+  },
+  "competent_cfg": {
+    "pm": 0.1,
+    "use_sbx": true
+  },
+  "competent_mohho": {
+    "mean": 315152.9,
+    "std": 6882.8
+  },
+  "random_restart": {
+    "mean": 310214.2,
+    "std": 2735.4
+  },
+  "naive_mohho": {
+    "mean": 302756.1,
+    "std": 7137.9
+  },
+  "competent_minus_random_pct": 1.59,
+  "competent_beats_random": true,
+  "verdict": "CONFIRMADO: el MO-HHO competente LE GANA a random restart, mientras el ingenuo pierde. El 'random restart beats the swarm / decoder does most of the work' es artefacto del swarm roto. Reformular la tesis hacia ORDER-PRESERVATION tau (operadores que cambian el orden ganan; SBX near-identity pierde), y reportar honestamente que un swarm competente supera al muestreo ciego.",
+  "elapsed_s": 486.0
+}

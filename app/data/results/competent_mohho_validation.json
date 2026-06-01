@@ -1,0 +1,111 @@
+{
+  "budget": {
+    "pop": 100,
+    "gen": 500,
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "threshold_hv_over_true": 0.9,
+  "configs": [
+    {
+      "cfg": {
+        "pm": 0.03333333333333333,
+        "use_sbx": false
+      },
+      "per_benchmark": {
+        "ZDT1": {
+          "hv_over_true": 0.9977,
+          "sane": true
+        },
+        "ZDT2": {
+          "hv_over_true": 0.9962,
+          "sane": true
+        },
+        "DTLZ2": {
+          "hv_over_true": 0.869,
+          "sane": false
+        }
+      },
+      "min_over_benchmarks": 0.869,
+      "sane_all": false
+    },
+    {
+      "cfg": {
+        "pm": 0.1,
+        "use_sbx": false
+      },
+      "per_benchmark": {
+        "ZDT1": {
+          "hv_over_true": 0.9976,
+          "sane": true
+        },
+        "ZDT2": {
+          "hv_over_true": 0.996,
+          "sane": true
+        },
+        "DTLZ2": {
+          "hv_over_true": 0.9102,
+          "sane": true
+        }
+      },
+      "min_over_benchmarks": 0.9102,
+      "sane_all": true
+    },
+    {
+      "cfg": {
+        "pm": 0.1,
+        "use_sbx": true
+      },
+      "per_benchmark": {
+        "ZDT1": {
+          "hv_over_true": 0.9976,
+          "sane": true
+        },
+        "ZDT2": {
+          "hv_over_true": 0.9961,
+          "sane": true
+        },
+        "DTLZ2": {
+          "hv_over_true": 0.9203,
+          "sane": true
+        }
+      },
+      "min_over_benchmarks": 0.9203,
+      "sane_all": true
+    },
+    {
+      "cfg": {
+        "pm": 0.15,
+        "use_sbx": true
+      },
+      "per_benchmark": {
+        "ZDT1": {
+          "hv_over_true": 0.9974,
+          "sane": true
+        },
+        "ZDT2": {
+          "hv_over_true": 0.9956,
+          "sane": true
+        },
+        "DTLZ2": {
+          "hv_over_true": 0.9255,
+          "sane": true
+        }
+      },
+      "min_over_benchmarks": 0.9255,
+      "sane_all": true
+    }
+  ],
+  "adopted_config": {
+    "pm": 0.15,
+    "use_sbx": true
+  },
+  "any_sane": true,
+  "verdict": "MO-HHO competente SANO en ZDT1/ZDT2/DTLZ2 -> baseline justo; el resultado 'random restart vs swarm' ya no esta confundido por un swarm roto.",
+  "elapsed_s": 1471.6
+}

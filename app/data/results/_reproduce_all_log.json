@@ -1,0 +1,26 @@
+[
+  {
+    "script": "diag_mohho_freeze.py",
+    "ok": true,
+    "secs": 260.9,
+    "stderr_tail": ""
+  },
+  {
+    "script": "mohho_acceptance_selection.py",
+    "ok": true,
+    "secs": 255.2,
+    "stderr_tail": ""
+  },
+  {
+    "script": "diag_zdt2_collapse.py",
+    "ok": true,
+    "secs": 1.9,
+    "stderr_tail": ""
+  },
+  {
+    "script": "verify_paper.py",
+    "ok": true,
+    "secs": 0.0,
+    "stderr_tail": ""
+  }
+]

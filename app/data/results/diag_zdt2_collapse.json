@@ -1,0 +1,97 @@
+{
+  "true_front_hv": 0.5431,
+  "gated": {
+    "final_archive_size": 1,
+    "final_hv": 0.11,
+    "archive_size_every_50it": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "x0_mean_every_50it": [
+      0.0633,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "xtail_mean_every_50it": [
+      0.0837,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "surviving_points": [
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "canonical": {
+    "final_archive_size": 1,
+    "final_hv": 0.11,
+    "archive_size_every_50it": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "x0_mean_every_50it": [
+      0.0676,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "xtail_mean_every_50it": [
+      0.0796,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "surviving_points": [
+      [
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "root_cause": "Ambas politicas colapsan: archivo->1, x0_mean->0 y xtail_mean->0, i.e. toda la poblacion va a x=(0,...,0) => unico punto objetivo (0,1), HV=ref0*0.1=0.11. Es un ATRACTOR DE ESQUINA del clip a [0,1] bajo siege/exploracion en un frente CONCAVO, NO un artefacto de la aceptacion. Reproduce el veredicto 'roto' de expA en ZDT2.",
+  "elapsed_s": 1.8
+}

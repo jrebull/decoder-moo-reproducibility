@@ -1,0 +1,157 @@
+{
+  "seed_base": 1,
+  "continuous_benchmarks": {
+    "_meta": {
+      "budget_evals": 50000,
+      "pop": 100,
+      "gen": 500,
+      "seeds": [
+        1,
+        2,
+        3
+      ]
+    },
+    "ZDT1": {
+      "M": 2,
+      "n": 30,
+      "ref": [
+        1.1,
+        1.1
+      ],
+      "true_front_hv": 0.8765408159636171,
+      "mohho_hv_mean": 0.8720430369238005,
+      "nsga2_hv_mean": 0.8678689837607175,
+      "mohho_per_seed": [
+        0.8720233954339787,
+        0.872037561667477,
+        0.8720681536699457
+      ],
+      "nsga2_per_seed": [
+        0.8675853316943521,
+        0.8677514041675809,
+        0.8682702154202199
+      ],
+      "mohho_over_true": 0.9948687169406115,
+      "nsga2_over_true": 0.9901067559605125,
+      "mohho_over_nsga2": 1.004809542962344,
+      "veredicto_mohho_realcoded": "sano",
+      "nsga2_self_check": "sano"
+    },
+    "ZDT2": {
+      "M": 2,
+      "n": 30,
+      "ref": [
+        1.1,
+        1.1
+      ],
+      "true_front_hv": 0.5432083124973957,
+      "mohho_hv_mean": 0.11000000000000011,
+      "nsga2_hv_mean": 0.5357813959088645,
+      "mohho_per_seed": [
+        0.11000000000000011,
+        0.11000000000000011,
+        0.11000000000000011
+      ],
+      "nsga2_per_seed": [
+        0.5350746438676166,
+        0.5359224299772547,
+        0.5363471138817224
+      ],
+      "mohho_over_true": 0.20250058305307597,
+      "nsga2_over_true": 0.9863276823685081,
+      "mohho_over_nsga2": 0.20530761396334657,
+      "veredicto_mohho_realcoded": "roto",
+      "nsga2_self_check": "sano"
+    },
+    "DTLZ2": {
+      "M": 3,
+      "n": 12,
+      "ref": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "true_front_hv": 0.8042652656448659,
+      "mohho_hv_mean": 0.6868631185619104,
+      "nsga2_hv_mean": 0.6628103098093373,
+      "mohho_per_seed": [
+        0.6819675870395246,
+        0.6828207126455063,
+        0.6958010560007003
+      ],
+      "nsga2_per_seed": [
+        0.6608025206290705,
+        0.6665827631235948,
+        0.6610456456753466
+      ],
+      "mohho_over_true": 0.8540255906876426,
+      "nsga2_over_true": 0.8241190290343958,
+      "mohho_over_nsga2": 1.036289128875337,
+      "veredicto_mohho_realcoded": "sano",
+      "nsga2_self_check": "sano"
+    }
+  },
+  "toy_tsp": {
+    "ncity": 10,
+    "known_optimum": 6.180339887498948,
+    "perm_nsga2_ops": {
+      "best_per_seed": [
+        6.180339887498949,
+        6.180339887498949,
+        6.180339887498948,
+        6.180339887498949,
+        6.180339887498949
+      ],
+      "best_mean": 6.180339887498949,
+      "best_min": 6.180339887498948,
+      "gap_mean_vs_opt": 1.4371028711489718e-16,
+      "gap_min_vs_opt": 0.0,
+      "veredicto": "sano"
+    },
+    "discrete_mohho_ops": {
+      "best_per_seed": [
+        6.180339887498948,
+        6.180339887498948,
+        6.180339887498948,
+        6.180339887498948,
+        6.180339887498948
+      ],
+      "best_mean": 6.180339887498948,
+      "best_min": 6.180339887498948,
+      "gap_mean_vs_opt": 0.0,
+      "gap_min_vs_opt": 0.0,
+      "veredicto": "sano"
+    }
+  },
+  "random_restart": {
+    "source_does_search": false,
+    "mechanism": "draw uniform random keys -> SPV -> greedy decode -> crowding-pruned archive. No operators, no population dynamics, no local search.",
+    "combined_front_hv": 316383.0721938204,
+    "combined_front_size": 81,
+    "veredicto": "confirmado_muestreo_puro"
+  },
+  "veredicto_global": {
+    "mohho_realcoded": "sospechoso",
+    "permutation_operators": "sano",
+    "random_restart": "confirmado_muestreo_puro",
+    "gate_passed": true,
+    "implicacion": "MOHHO real-coded recupera frentes conocidos con HV razonable y los operadores permutacionales alcanzan el optimo del TSP: el ladder NO esta contaminado por implementacion rota; el 'random restart competitivo' no es artefacto de codigo. Procede el diagnostico de colapso (Exp B/C/D).",
+    "mohho_realcoded_clarificacion": "FUNCIONAL pero DEBIL en multi-objetivo: sano en ZDT1 (0.995) y DTLZ2 (0.854), y en ZDT2 converge al frente verdadero (g=1) pero colapsa a un extremo (fallo de diversidad, no bug). El ladder NO esta contaminado por implementacion rota."
+  },
+  "elapsed_s": 701.4284081459045,
+  "mohho_zdt2_diagnosis": {
+    "zdt2": {
+      "archive_size_mean": 1.0,
+      "min_g_recovered_mean": 1.0,
+      "true_front_g": 1.0,
+      "f2_min_mean": 1.0
+    },
+    "zdt1_for_contrast": {
+      "archive_size_mean": 100.0,
+      "min_g_recovered_mean": 0.601247339525169,
+      "true_front_g": 1.0,
+      "f2_min_mean": 0.0
+    },
+    "interpretation": "En ZDT2 (frente CONCAVO) el archivo de MOHHO colapsa a ~1 punto(s) con g=1.000 (~1.0 = frente verdadero): MOHHO CONVERGE al frente pero no se DESPLIEGA, un fallo de DIVERSIDAD en fronts concavos, NO un bug de implementacion (en ZDT1 convexo recupera 0.995 del HV verdadero). Conclusion del gate: MOHHO real-coded esta CORRECTAMENTE implementado pero es un optimizador multi-objetivo DEBIL (poca diversidad en fronts concavos). Por tanto 'random restart competitivo con MOHHO real-coded' refleja una debilidad algoritmica genuina del swarm real-coded, NO una contaminacion del ladder por codigo roto. El ladder es valido."
+  }
+}

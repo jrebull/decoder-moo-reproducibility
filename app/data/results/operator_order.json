@@ -1,0 +1,26 @@
+{
+  "trials": 3000,
+  "dim": 105,
+  "operators": {
+    "SBX crossover (GA)": {
+      "mean_tau": 0.9860029304029304,
+      "std_tau": 0.003747900001033066
+    },
+    "Polynomial mutation (GA)": {
+      "mean_tau": 0.998389377289377,
+      "std_tau": 0.002361128830953074
+    },
+    "HHO exploration (|E|>=1, OP2)": {
+      "mean_tau": -0.00027106227106227096,
+      "std_tau": 0.0654963496720636
+    },
+    "HHO soft besiege (OP3, |E|=0.7)": {
+      "mean_tau": -0.2623887667887667,
+      "std_tau": 0.19043622270573543
+    },
+    "HHO hard besiege (OP4, |E|=0.3)": {
+      "mean_tau": 0.028716727716727713,
+      "std_tau": 0.06799398916662133
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "budget": {
+    "pop": 100,
+    "gen": 500,
+    "evals": 50000,
+    "seeds": [
+      1,
+      2,
+      3
+    ]
+  },
+  "sane_threshold_hv_over_true": 0.9,
+  "per_benchmark": {
+    "ZDT1": {
+      "M": 2,
+      "dim": 30,
+      "ref": [
+        1.1,
+        1.1
+      ],
+      "true_front_hv": 0.876414,
+      "policies": {
+        "canonical": {
+          "hv_mean": 0.8720619436420405,
+          "hv_over_true": 0.995,
+          "moved_fraction_mean": 1.0,
+          "archive_mean": 100.0,
+          "sane": true
+        },
+        "gated": {
+          "hv_mean": 0.8720430369238007,
+          "hv_over_true": 0.995,
+          "moved_fraction_mean": 0.0027,
+          "archive_mean": 100.0,
+          "sane": true
+        },
+        "pareto_improving_restart": {
+          "hv_mean": 0.872080069621174,
+          "hv_over_true": 0.9951,
+          "moved_fraction_mean": 0.9995,
+          "archive_mean": 100.0,
+          "sane": true
+        }
+      },
+      "nsga2_reference": {
+        "hv_mean": 0.8701590046395936,
+        "hv_over_true": 0.9929
+      }
+    },
+    "ZDT2": {
+      "M": 2,
+      "dim": 30,
+      "ref": [
+        1.1,
+        1.1
+      ],
+      "true_front_hv": 0.543083,
+      "policies": {
+        "canonical": {
+          "hv_mean": 0.11000000000000011,
+          "hv_over_true": 0.2025,
+          "moved_fraction_mean": 1.0,
+          "archive_mean": 1.0,
+          "sane": false
+        },
+        "gated": {
+          "hv_mean": 0.11000000000000011,
+          "hv_over_true": 0.2025,
+          "moved_fraction_mean": 0.0027,
+          "archive_mean": 1.0,
+          "sane": false
+        },
+        "pareto_improving_restart": {
+          "hv_mean": 0.11000000000000011,
+          "hv_over_true": 0.2025,
+          "moved_fraction_mean": 0.9995,
+          "archive_mean": 1.0,
+          "sane": false
+        }
+      },
+      "nsga2_reference": {
+        "hv_mean": 0.537180120012647,
+        "hv_over_true": 0.9891
+      }
+    },
+    "DTLZ2": {
+      "M": 3,
+      "dim": 12,
+      "ref": [
+        1.1,
+        1.1,
+        1.1
+      ],
+      "true_front_hv": 0.786056,
+      "policies": {
+        "canonical": {
+          "hv_mean": 0.6781057317594533,
+          "hv_over_true": 0.8627,
+          "moved_fraction_mean": 1.0,
+          "archive_mean": 100.0,
+          "sane": false
+        },
+        "gated": {
+          "hv_mean": 0.6868631185619104,
+          "hv_over_true": 0.8738,
+          "moved_fraction_mean": 0.0326,
+          "archive_mean": 100.0,
+          "sane": false
+        },
+        "pareto_improving_restart": {
+          "hv_mean": 0.691201887915975,
+          "hv_over_true": 0.8793,
+          "moved_fraction_mean": 0.9282,
+          "archive_mean": 100.0,
+          "sane": false
+        }
+      },
+      "nsga2_reference": {
+        "hv_mean": 0.702474134981537,
+        "hv_over_true": 0.8937
+      }
+    }
+  },
+  "verdict": {
+    "canonical": {
+      "sane_per_benchmark": {
+        "ZDT1": true,
+        "ZDT2": false,
+        "DTLZ2": false
+      },
+      "globally_sane": false
+    },
+    "gated": {
+      "sane_per_benchmark": {
+        "ZDT1": true,
+        "ZDT2": false,
+        "DTLZ2": false
+      },
+      "globally_sane": false
+    },
+    "pareto_improving_restart": {
+      "sane_per_benchmark": {
+        "ZDT1": true,
+        "ZDT2": false,
+        "DTLZ2": false
+      },
+      "globally_sane": false
+    }
+  },
+  "DECISION": "NINGUNA politica de aceptacion sanea ZDT2 (todas colapsan a ~0.11). El colapso es PATOLOGIA DE OPERADORES/ARCHIVO en frentes concavos (clip a [0,1] crea un atractor de esquina x=0), NO de la aceptacion. Arreglo requerido es mas profundo (p.ej. reflexion-en-bordes en vez de clip, archivo con epsilon-dominancia, o amortiguar el tiro hacia el lider), O bien SCOPING honesto: declarar el MOHHO real-coded como baseline que colapsa en frentes concavos y NO apoyar la tesis en que sea un swarm fuerte. La aceptacion-gated ademas CONGELA la poblacion (ver diag_mohho_freeze) -- corregir el mecanismo del texto igualmente.",
+  "zdt2_fixable_by_acceptance": false,
+  "elapsed_s": 255.2
+}

@@ -1,0 +1,311 @@
+{
+  "method": "epsilon-constraint sobre f3 + MILP (CBC); f1,f3 lineales; f2 a posteriori",
+  "instance": "base 105 grupos (no sub-instancia)",
+  "V": 140000,
+  "max_weighted_utilization": 101220,
+  "min_f3_under_f1opt": 38780,
+  "eps_grid": [
+    0,
+    50,
+    100,
+    200,
+    340,
+    500,
+    680,
+    1000,
+    1500,
+    1940,
+    3000,
+    5000,
+    8000,
+    12000,
+    20000,
+    38780,
+    140000
+  ],
+  "all_solved_points": [
+    {
+      "eps": 0,
+      "f1": 8.788778,
+      "f2": 13.0,
+      "f3": 0.0,
+      "slack_V": 0.0,
+      "sum_x": 140000
+    },
+    {
+      "eps": 50,
+      "f1": 8.78875,
+      "f2": 13.0,
+      "f3": 50.0,
+      "slack_V": 50.0,
+      "sum_x": 139950
+    },
+    {
+      "eps": 100,
+      "f1": 8.788722,
+      "f2": 13.0,
+      "f3": 100.0,
+      "slack_V": 100.0,
+      "sum_x": 139900
+    },
+    {
+      "eps": 200,
+      "f1": 8.788667,
+      "f2": 13.0,
+      "f3": 200.0,
+      "slack_V": 200.0,
+      "sum_x": 139800
+    },
+    {
+      "eps": 340,
+      "f1": 8.788589,
+      "f2": 13.0,
+      "f3": 340.0,
+      "slack_V": 340.0,
+      "sum_x": 139660
+    },
+    {
+      "eps": 500,
+      "f1": 8.7885,
+      "f2": 13.0,
+      "f3": 500.0,
+      "slack_V": 500.0,
+      "sum_x": 139500
+    },
+    {
+      "eps": 680,
+      "f1": 8.7884,
+      "f2": 13.0,
+      "f3": 680.0,
+      "slack_V": 680.0,
+      "sum_x": 139320
+    },
+    {
+      "eps": 1000,
+      "f1": 8.7884,
+      "f2": 13.0,
+      "f3": 1000.0,
+      "slack_V": 1000.0,
+      "sum_x": 139000
+    },
+    {
+      "eps": 1500,
+      "f1": 8.7884,
+      "f2": 13.0,
+      "f3": 1500.0,
+      "slack_V": 1500.0,
+      "sum_x": 138500
+    },
+    {
+      "eps": 1940,
+      "f1": 8.7884,
+      "f2": 13.0,
+      "f3": 1940.0,
+      "slack_V": 1940.0,
+      "sum_x": 138060
+    },
+    {
+      "eps": 3000,
+      "f1": 8.7884,
+      "f2": 13.0,
+      "f3": 3000.0,
+      "slack_V": 3000.0,
+      "sum_x": 137000
+    },
+    {
+      "eps": 5000,
+      "f1": 8.7884,
+      "f2": 13.0,
+      "f3": 5000.0,
+      "slack_V": 5000.0,
+      "sum_x": 135000
+    },
+    {
+      "eps": 8000,
+      "f1": 8.7884,
+      "f2": 13.0,
+      "f3": 8000.0,
+      "slack_V": 8000.0,
+      "sum_x": 132000
+    },
+    {
+      "eps": 12000,
+      "f1": 8.7884,
+      "f2": 13.0,
+      "f3": 12000.0,
+      "slack_V": 12000.0,
+      "sum_x": 128000
+    },
+    {
+      "eps": 20000,
+      "f1": 8.7884,
+      "f2": 12.023419,
+      "f3": 20000.0,
+      "slack_V": 20000.0,
+      "sum_x": 120000
+    },
+    {
+      "eps": 38780,
+      "f1": 8.7884,
+      "f2": 10.0,
+      "f3": 38780.0,
+      "slack_V": 38780.0,
+      "sum_x": 101220
+    },
+    {
+      "eps": 140000,
+      "f1": 8.7884,
+      "f2": 10.0,
+      "f3": 38780.0,
+      "slack_V": 38780.0,
+      "sum_x": 101220
+    }
+  ],
+  "exact_bi_objective_front_f1f3": [
+    {
+      "eps": 680,
+      "f1": 8.7884,
+      "f2": 13.0,
+      "f3": 680.0,
+      "slack_V": 680.0,
+      "sum_x": 139320
+    },
+    {
+      "eps": 500,
+      "f1": 8.7885,
+      "f2": 13.0,
+      "f3": 500.0,
+      "slack_V": 500.0,
+      "sum_x": 139500
+    },
+    {
+      "eps": 340,
+      "f1": 8.788589,
+      "f2": 13.0,
+      "f3": 340.0,
+      "slack_V": 340.0,
+      "sum_x": 139660
+    },
+    {
+      "eps": 200,
+      "f1": 8.788667,
+      "f2": 13.0,
+      "f3": 200.0,
+      "slack_V": 200.0,
+      "sum_x": 139800
+    },
+    {
+      "eps": 100,
+      "f1": 8.788722,
+      "f2": 13.0,
+      "f3": 100.0,
+      "slack_V": 100.0,
+      "sum_x": 139900
+    },
+    {
+      "eps": 50,
+      "f1": 8.78875,
+      "f2": 13.0,
+      "f3": 50.0,
+      "slack_V": 50.0,
+      "sum_x": 139950
+    },
+    {
+      "eps": 0,
+      "f1": 8.788778,
+      "f2": 13.0,
+      "f3": 0.0,
+      "slack_V": 0.0,
+      "sum_x": 140000
+    }
+  ],
+  "exact_front_size": 7,
+  "Q1_question": "Existen optimos no-saturantes (slack_V>0) que sean NO-dominados en (f1,f2,f3) respecto al frente greedy de 92 soluciones?",
+  "greedy_best_f1": 8.7884,
+  "greedy_best_f2": 2.0,
+  "Q1_nondominated_nonsaturating_contraejemplos": [
+    {
+      "eps": 50,
+      "f1": 8.78875,
+      "f2": 13.0,
+      "f3": 50.0,
+      "slack_V": 50.0,
+      "sum_x": 139950,
+      "f1_improvement_vs_greedy_best_f1": -0.00035,
+      "f2_improvement_vs_greedy_best_f2": -11.0,
+      "meaningful_f2_gain": false
+    },
+    {
+      "eps": 100,
+      "f1": 8.788722,
+      "f2": 13.0,
+      "f3": 100.0,
+      "slack_V": 100.0,
+      "sum_x": 139900,
+      "f1_improvement_vs_greedy_best_f1": -0.000322,
+      "f2_improvement_vs_greedy_best_f2": -11.0,
+      "meaningful_f2_gain": false
+    },
+    {
+      "eps": 200,
+      "f1": 8.788667,
+      "f2": 13.0,
+      "f3": 200.0,
+      "slack_V": 200.0,
+      "sum_x": 139800,
+      "f1_improvement_vs_greedy_best_f1": -0.000267,
+      "f2_improvement_vs_greedy_best_f2": -11.0,
+      "meaningful_f2_gain": false
+    },
+    {
+      "eps": 340,
+      "f1": 8.788589,
+      "f2": 13.0,
+      "f3": 340.0,
+      "slack_V": 340.0,
+      "sum_x": 139660,
+      "f1_improvement_vs_greedy_best_f1": -0.000189,
+      "f2_improvement_vs_greedy_best_f2": -11.0,
+      "meaningful_f2_gain": false
+    },
+    {
+      "eps": 500,
+      "f1": 8.7885,
+      "f2": 13.0,
+      "f3": 500.0,
+      "slack_V": 500.0,
+      "sum_x": 139500,
+      "f1_improvement_vs_greedy_best_f1": -0.0001,
+      "f2_improvement_vs_greedy_best_f2": -11.0,
+      "meaningful_f2_gain": false
+    },
+    {
+      "eps": 20000,
+      "f1": 8.7884,
+      "f2": 12.023419,
+      "f3": 20000.0,
+      "slack_V": 20000.0,
+      "sum_x": 120000,
+      "f1_improvement_vs_greedy_best_f1": 0.0,
+      "f2_improvement_vs_greedy_best_f2": -10.0234,
+      "meaningful_f2_gain": false
+    },
+    {
+      "eps": 38780,
+      "f1": 8.7884,
+      "f2": 10.0,
+      "f3": 38780.0,
+      "slack_V": 38780.0,
+      "sum_x": 101220,
+      "f1_improvement_vs_greedy_best_f1": 0.0,
+      "f2_improvement_vs_greedy_best_f2": -8.0,
+      "meaningful_f2_gain": false
+    }
+  ],
+  "Q1_n_contraejemplos": 7,
+  "Q1_n_contraejemplos_significativos": 0,
+  "Q1_contraejemplos_significativos": [],
+  "claim_holds": false,
+  "claim_interpretation": "claim_holds=true: TODAS las soluciones no-dominadas saturan (slack_V=0). claim_holds=false: existen optimos no-saturantes no-dominados respecto al frente greedy. MATIZ DE MAGNITUD: distinguir contraejemplos en el eje f1 degenerado (mejora < 1e-3, sin sentido practico) de los PRACTICAMENTE significativos (mejora de f2 > 0.5 anios a costa de waste). Ver Q1_n_contraejemplos_significativos.",
+  "elapsed_s": 1.1269049644470215
+}

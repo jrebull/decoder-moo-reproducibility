@@ -1,0 +1,55 @@
+{
+  "design": "3 operator sets x 3 architectures, 30 seeds, visa problem, matched budget",
+  "operators": [
+    "OX+swap",
+    "PMX+insertion",
+    "CX+inversion"
+  ],
+  "architectures": [
+    "perm-NSGA-II",
+    "perm-MOEA/D",
+    "Discrete-MOHHO"
+  ],
+  "cell_hv_mean": {
+    "OX+swap | perm-NSGA-II": 317237.15089659765,
+    "OX+swap | perm-MOEA/D": 313608.05847953685,
+    "OX+swap | Discrete-MOHHO": 317568.63040258305,
+    "PMX+insertion | perm-NSGA-II": 311283.8354239924,
+    "PMX+insertion | perm-MOEA/D": 309316.06789865374,
+    "PMX+insertion | Discrete-MOHHO": 317714.618702437,
+    "CX+inversion | perm-NSGA-II": 309702.29434484505,
+    "CX+inversion | perm-MOEA/D": 309247.6556363479,
+    "CX+inversion | Discrete-MOHHO": 317048.1390483045
+  },
+  "cell_hv_std": {
+    "OX+swap | perm-NSGA-II": 3691.2001216380313,
+    "OX+swap | perm-MOEA/D": 6687.197819475235,
+    "OX+swap | Discrete-MOHHO": 3710.145076711998,
+    "PMX+insertion | perm-NSGA-II": 9005.501885084499,
+    "PMX+insertion | perm-MOEA/D": 9010.910892461621,
+    "PMX+insertion | Discrete-MOHHO": 4945.942591965487,
+    "CX+inversion | perm-NSGA-II": 8635.141527883938,
+    "CX+inversion | perm-MOEA/D": 8718.011586431161,
+    "CX+inversion | Discrete-MOHHO": 2680.377618876693
+  },
+  "operator_marginal_hv": {
+    "OX+swap": 316137.94659290585,
+    "PMX+insertion": 312771.5073416944,
+    "CX+inversion": 311999.3630098325
+  },
+  "architecture_marginal_hv": {
+    "perm-NSGA-II": 312741.093555145,
+    "perm-MOEA/D": 310723.92733817943,
+    "Discrete-MOHHO": 317443.7960511082
+  },
+  "operator_range_hv": 4138.583583073341,
+  "architecture_range_hv": 6719.868712928786,
+  "eta_squared": {
+    "operator": 0.05459182558161005,
+    "architecture": 0.13403436445125755,
+    "interaction": 0.028633746313343183,
+    "residual_seed": 0.7827400636537891
+  },
+  "grand_mean_hv": 313636.2723148109,
+  "elapsed_s": 1239.5165476799011
+}

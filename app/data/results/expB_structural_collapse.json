@@ -1,0 +1,422 @@
+{
+  "B1_effective_dimensionality": {
+    "mohho_realcoded": {
+      "n_points": 92,
+      "explained_variance_ratio": [
+        0.8158,
+        0.172,
+        0.0122
+      ],
+      "pc1": 0.8158,
+      "pc1_plus_pc2": 0.9878,
+      "raw_range_per_objective": [
+        0.2132,
+        11.0,
+        680.0
+      ],
+      "cv_per_objective": [
+        0.0066,
+        0.412,
+        3.3326
+      ]
+    },
+    "nsga2_realcoded": {
+      "n_points": 92,
+      "explained_variance_ratio": [
+        0.8777,
+        0.1123,
+        0.01
+      ],
+      "pc1": 0.8777,
+      "pc1_plus_pc2": 0.99,
+      "raw_range_per_objective": [
+        0.2179,
+        10.75,
+        6080.0
+      ],
+      "cv_per_objective": [
+        0.0058,
+        0.376,
+        3.4483
+      ]
+    },
+    "random_restart": {
+      "n_points": 81,
+      "explained_variance_ratio": [
+        0.9057,
+        0.078,
+        0.0162
+      ],
+      "pc1": 0.9057,
+      "pc1_plus_pc2": 0.9838,
+      "raw_range_per_objective": [
+        0.2311,
+        10.8,
+        2580.0
+      ],
+      "cv_per_objective": [
+        0.0067,
+        0.4526,
+        5.944
+      ]
+    },
+    "perm_nsga2": {
+      "n_points": 148,
+      "explained_variance_ratio": [
+        0.812,
+        0.1772,
+        0.0108
+      ],
+      "pc1": 0.812,
+      "pc1_plus_pc2": 0.9892,
+      "raw_range_per_objective": [
+        0.2119,
+        11.0,
+        9480.0
+      ],
+      "cv_per_objective": [
+        0.0061,
+        0.3878,
+        3.0927
+      ]
+    },
+    "perm_moead": {
+      "n_points": 90,
+      "explained_variance_ratio": [
+        0.8743,
+        0.1179,
+        0.0079
+      ],
+      "pc1": 0.8743,
+      "pc1_plus_pc2": 0.9921,
+      "raw_range_per_objective": [
+        0.2083,
+        11.0,
+        680.0
+      ],
+      "cv_per_objective": [
+        0.0074,
+        0.543,
+        3.9403
+      ]
+    },
+    "discrete_mohho": {
+      "n_points": 149,
+      "explained_variance_ratio": [
+        0.9082,
+        0.0792,
+        0.0126
+      ],
+      "pc1": 0.9082,
+      "pc1_plus_pc2": 0.9874,
+      "raw_range_per_objective": [
+        0.2111,
+        11.0,
+        1480.0
+      ],
+      "cv_per_objective": [
+        0.0066,
+        0.4111,
+        4.3716
+      ]
+    }
+  },
+  "B1_interpretation": {
+    "pc1_range_across_methods": [
+      0.812,
+      0.9082
+    ],
+    "pc1_plus_pc2_range": [
+      0.9838,
+      0.9921
+    ],
+    "pc3_range": [
+      0.0079,
+      0.0162
+    ],
+    "effective_dim_95pct_per_method": {
+      "mohho_realcoded": 2,
+      "nsga2_realcoded": 2,
+      "random_restart": 2,
+      "perm_nsga2": 2,
+      "perm_moead": 2,
+      "discrete_mohho": 2
+    },
+    "median_effective_dim": 2,
+    "effectively_1d": false,
+    "effectively_2d": true,
+    "note": "PCA sobre objetivos min-max por metodo. PC3~1% => f3 colapsa por saturacion (82/92 sols con f3=0). PC1+PC2~99% con PC2~12-18% => trade-off f1-f2 genuino y bidimensional. El frente NO es mono-objetivo, pero el visa es un lead-case multi-objetivo DEBIL (un eje, f2, domina; f1 angosto; f3 saturado)."
+  },
+  "B3_cardinality_vs_reach": {
+    "perm_tier_cardinality": 188,
+    "rk_tier_cardinality": 116,
+    "tiers_span_same_f2_extent": true,
+    "interpretation": "Ambos tiers alcanzan el rango COMPLETO de f2 (mismo ALCANCE); la ventaja perm es de RESOLUCION/cardinalidad (188 vs 116 sols), no de region nueva. Matiza el argumento 'perm llega a regiones que rk no'."
+  },
+  "B2_decoder_degeneration": {
+    "n_sampled": 50000,
+    "n_distinct_permutations": 50000,
+    "n_distinct_objective_points": 39401,
+    "degeneration_ratio": 1.269,
+    "achievable_ranges": {
+      "f1": [
+        8.789455555555556,
+        9.062622222222222
+      ],
+      "f2": [
+        2.25,
+        13.0
+      ],
+      "f3": [
+        0.0,
+        22080.0
+      ]
+    },
+    "reference_point": [
+      10.0,
+      16.0,
+      20000.0
+    ],
+    "f3_ref_vs_observed_max": {
+      "ref": 20000.0,
+      "observed_max": 22080.0,
+      "ref_inflation_factor": 0.9
+    },
+    "f1_range_width": 0.2732,
+    "f2_range_width": 10.75,
+    "f1_vs_f2_range_ratio": 39.4
+  },
+  "B3_tier_coverage": {
+    "f2": {
+      "axis": "f2",
+      "n_bins": 20,
+      "axis_range": [
+        2.0,
+        13.0
+      ],
+      "rk_tier_front_size": 116,
+      "perm_tier_front_size": 188,
+      "rk_bins_covered": 20,
+      "perm_bins_covered": 20,
+      "perm_only_bins": [],
+      "rk_only_bins": [],
+      "perm_strictly_covers_more": false,
+      "perm_superset_of_rk": true,
+      "rk_bin_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "perm_bin_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "bin_edges": [
+        2.0,
+        2.55,
+        3.1,
+        3.65,
+        4.2,
+        4.75,
+        5.3,
+        5.85,
+        6.4,
+        6.95,
+        7.5,
+        8.05,
+        8.6,
+        9.15,
+        9.7,
+        10.25,
+        10.8,
+        11.35,
+        11.9,
+        12.45,
+        13.0
+      ]
+    },
+    "f1": {
+      "axis": "f1",
+      "n_bins": 20,
+      "axis_range": [
+        8.7884,
+        9.001589
+      ],
+      "rk_tier_front_size": 116,
+      "perm_tier_front_size": 188,
+      "rk_bins_covered": 17,
+      "perm_bins_covered": 18,
+      "perm_only_bins": [
+        16
+      ],
+      "rk_only_bins": [],
+      "perm_strictly_covers_more": true,
+      "perm_superset_of_rk": true,
+      "rk_bin_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        18,
+        19
+      ],
+      "perm_bin_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        18,
+        19
+      ],
+      "bin_edges": [
+        8.7884,
+        8.7991,
+        8.8097,
+        8.8204,
+        8.831,
+        8.8417,
+        8.8524,
+        8.863,
+        8.8737,
+        8.8843,
+        8.895,
+        8.9057,
+        8.9163,
+        8.927,
+        8.9376,
+        8.9483,
+        8.959,
+        8.9696,
+        8.9803,
+        8.9909,
+        9.0016
+      ]
+    },
+    "f3": {
+      "axis": "f3",
+      "n_bins": 20,
+      "axis_range": [
+        0.0,
+        9480.0
+      ],
+      "rk_tier_front_size": 116,
+      "perm_tier_front_size": 188,
+      "rk_bins_covered": 3,
+      "perm_bins_covered": 11,
+      "perm_only_bins": [
+        3,
+        4,
+        7,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "rk_only_bins": [],
+      "perm_strictly_covers_more": true,
+      "perm_superset_of_rk": true,
+      "rk_bin_indices": [
+        0,
+        1,
+        2
+      ],
+      "perm_bin_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        7,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "bin_edges": [
+        0.0,
+        474.0,
+        948.0,
+        1422.0,
+        1896.0,
+        2370.0,
+        2844.0,
+        3318.0,
+        3792.0,
+        4266.0,
+        4740.0,
+        5214.0,
+        5688.0,
+        6162.0,
+        6636.0,
+        7110.0,
+        7584.0,
+        8058.0,
+        8532.0,
+        9006.0,
+        9480.0
+      ]
+    }
+  },
+  "H_str_verdict": "PARCIAL: f3 colapsa por saturacion (PC3~1%) y f1 es estructuralmente angosto (f2/f1=39.4x), pero el trade-off f1-f2 es bidimensional y genuino (PC1+PC2~99%). El problema es EFECTIVAMENTE BI-OBJETIVO, no mono-objetivo.",
+  "elapsed_s": 4.714438199996948
+}

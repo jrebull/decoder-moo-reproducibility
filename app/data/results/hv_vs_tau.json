@@ -1,0 +1,72 @@
+{
+  "points": [
+    {
+      "method": "nsga2_realcoded",
+      "hv_mean": 293367.1,
+      "tau": 0.9898,
+      "tier": "random_key",
+      "beats_random": false
+    },
+    {
+      "method": "naive_mohho",
+      "hv_mean": 302756.1,
+      "tau": -0.1536,
+      "tier": "random_key",
+      "beats_random": false
+    },
+    {
+      "method": "competent_mohho",
+      "hv_mean": 316347.1,
+      "tau": -0.331,
+      "tier": "random_key",
+      "beats_random": true
+    },
+    {
+      "method": "random_restart",
+      "hv_mean": 310214.2,
+      "tau": null,
+      "tier": "random_key",
+      "beats_random": false
+    },
+    {
+      "method": "perm_nsga2",
+      "hv_mean": 318151.3,
+      "tau": 0.2837,
+      "tier": "permutation",
+      "beats_random": true
+    },
+    {
+      "method": "perm_moead",
+      "hv_mean": 314846.2,
+      "tau": 0.2837,
+      "tier": "permutation",
+      "beats_random": true
+    },
+    {
+      "method": "discrete_mohho",
+      "hv_mean": 316792.3,
+      "tau": 0.2837,
+      "tier": "permutation",
+      "beats_random": true
+    }
+  ],
+  "random_restart_hv": 310214.2,
+  "spearman_hv_vs_tau": {
+    "rho": -0.213,
+    "p": 0.686,
+    "n": 6
+  },
+  "spearman_hv_vs_dist_from_identity": {
+    "rho": 0.213,
+    "p": 0.686
+  },
+  "correlation_is_weak": true,
+  "two_condition_rule": {
+    "statement": "A method beats blind random restart iff (1) its operator changes the decoded order (NOT near-identity, tau far from +1) AND (2) its selection preserves population diversity (NDS / decomposition / crowded archive, NOT dominance-gated acceptance).",
+    "nsga2_realcoded": "FAILS (1): tau=0.99 near-identity -> loses",
+    "naive_mohho": "FAILS (2): gated acceptance freezes the population -> loses",
+    "competent_mohho": "satisfies BOTH (low-tau HHO offspring + NDS) -> first real-coded swarm to beat random",
+    "perm_methods": "satisfy BOTH (order-changing OX/swap + diversity-preserving selection) -> win"
+  },
+  "honest_note": "The scalar HV-vs-tau correlation is WEAK (Spearman rho=-0.21, p=0.69, n=6) because tau alone does not separate winners from losers: the naive swarm is low-tau yet loses (its acceptance freezes the population). The data support a TWO-CONDITION rule, not a monotone HV-tau law. Reported as-is, not adorned."
+}

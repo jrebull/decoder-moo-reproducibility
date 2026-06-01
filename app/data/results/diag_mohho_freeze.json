@@ -1,0 +1,26 @@
+{
+  "budget": {
+    "pop": 50,
+    "iter": 500,
+    "evals": 25000,
+    "seeds": 30,
+    "seed_base": 1
+  },
+  "gated_current_code": {
+    "hv_mean": 302756.0893907783,
+    "moved_fraction_per_iter_mean": 0.005777333333333332,
+    "mean_displacement_per_iter": 0.017719168181629066,
+    "archive_mean": 41.46666666666667
+  },
+  "canonical_always_move": {
+    "hv_mean": 296766.5798387475,
+    "moved_fraction_per_iter_mean": 0.96476,
+    "mean_displacement_per_iter": 1.3019844935691305,
+    "archive_mean": 36.9
+  },
+  "random_restart": {
+    "hv_mean": 310214.1736602492
+  },
+  "interpretation": "Si gated.moved_fraction ~ 0.01 => la poblacion esta CONGELADA por la regla dominance-gated: la propuesta HHO salta pero el gate la rechaza. El texto del paper (pag.14, 'position updates induce large permutation jumps so the swarm traverses the space') describe la PROPUESTA, no la trayectoria realizada. Reconciliar.",
+  "elapsed_s": 260.8
+}

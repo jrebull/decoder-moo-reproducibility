@@ -1,0 +1,512 @@
+{
+  "n_claims_checked": 72,
+  "n_mismatch": 0,
+  "rows": [
+    {
+      "name": "degeneration_ratio",
+      "status": "OK",
+      "paper": 1.27,
+      "json": 1.269,
+      "delta": -0.001000000000000112
+    },
+    {
+      "name": "distinct_objective_points",
+      "status": "OK",
+      "paper": 39401,
+      "json": 39401,
+      "delta": 0.0
+    },
+    {
+      "name": "pca_pc1_plus_pc2_mohho",
+      "status": "OK",
+      "paper": 0.99,
+      "json": 0.9878,
+      "delta": -0.0021999999999999797
+    },
+    {
+      "name": "f1_vs_f2_range_ratio",
+      "status": "OK",
+      "paper": 39.4,
+      "json": 39.4,
+      "delta": 0.0
+    },
+    {
+      "name": "decoder_margin_greedy_pct",
+      "status": "OK",
+      "paper": 6.93,
+      "json": 6.93,
+      "delta": 0.0
+    },
+    {
+      "name": "decoder_margin_C1_pct",
+      "status": "OK",
+      "paper": 1.45,
+      "json": 1.45,
+      "delta": 0.0
+    },
+    {
+      "name": "decoder_margin_C2_pct",
+      "status": "OK",
+      "paper": 4.27,
+      "json": 4.27,
+      "delta": 0.0
+    },
+    {
+      "name": "hv_mohho_mean",
+      "status": "OK",
+      "paper": 302756,
+      "json": 302756.0893907783,
+      "delta": 0.0893907782738097
+    },
+    {
+      "name": "hv_nsga2_mean",
+      "status": "OK",
+      "paper": 293367,
+      "json": 293367.0994345366,
+      "delta": 0.09943453659070656
+    },
+    {
+      "name": "hv_random_restart",
+      "status": "OK",
+      "paper": 310214,
+      "json": 310214.2,
+      "delta": 0.20000000001164153
+    },
+    {
+      "name": "hv_discrete_mohho",
+      "status": "OK",
+      "paper": 316792,
+      "json": 316792.3,
+      "delta": 0.29999999998835847
+    },
+    {
+      "name": "hv_perm_nsga2",
+      "status": "OK",
+      "paper": 318151,
+      "json": 318151.3,
+      "delta": 0.29999999998835847
+    },
+    {
+      "name": "hv_perm_moead",
+      "status": "OK",
+      "paper": 314846,
+      "json": 314846.2,
+      "delta": 0.20000000001164153
+    },
+    {
+      "name": "combined_hv_discrete",
+      "status": "OK",
+      "paper": 321408,
+      "json": 321408.2,
+      "delta": 0.20000000001164153
+    },
+    {
+      "name": "combined_hv_perm_nsga2",
+      "status": "OK",
+      "paper": 321935,
+      "json": 321935.3,
+      "delta": 0.29999999998835847
+    },
+    {
+      "name": "combined_size_discrete",
+      "status": "OK",
+      "paper": 137,
+      "json": 137,
+      "delta": 0.0
+    },
+    {
+      "name": "mohho_igd_1to30",
+      "status": "OK",
+      "paper": 0.0212,
+      "json": 0.02116304167034433,
+      "delta": -3.6958329655670946e-05
+    },
+    {
+      "name": "nsga_igd_1to30",
+      "status": "OK",
+      "paper": 0.0071,
+      "json": 0.00714834624818486,
+      "delta": 4.8346248184859275e-05
+    },
+    {
+      "name": "mohho_cv_1to30",
+      "status": "OK",
+      "paper": 2.36,
+      "json": 2.358,
+      "delta": -0.0019999999999997797
+    },
+    {
+      "name": "discrete_cv_1to30",
+      "status": "OK",
+      "paper": 0.71,
+      "json": 0.713,
+      "delta": 0.0030000000000000027
+    },
+    {
+      "name": "perm_nsga_cv_1to30",
+      "status": "OK",
+      "paper": 0.58,
+      "json": 0.583,
+      "delta": 0.0030000000000000027
+    },
+    {
+      "name": "canonical_levy_fematched_1to30",
+      "status": "OK",
+      "paper": 309180,
+      "json": 309179.82171537785,
+      "delta": -0.178284622146748
+    },
+    {
+      "name": "omnibus_chi2",
+      "status": "OK",
+      "paper": 112.6,
+      "json": 112.60952380952392,
+      "delta": 0.00952380952392673
+    },
+    {
+      "name": "omnibus_CD",
+      "status": "OK",
+      "paper": 1.38,
+      "json": 1.3766807908879968,
+      "delta": -0.0033192091120031186
+    },
+    {
+      "name": "tau_sbx",
+      "status": "OK",
+      "paper": 0.99,
+      "json": 0.9860029304029304,
+      "delta": -0.00399706959706958
+    },
+    {
+      "name": "fifo_f1",
+      "status": "OK",
+      "paper": 8.7891,
+      "json": 8.7891,
+      "delta": 0.0
+    },
+    {
+      "name": "fifo_f2",
+      "status": "OK",
+      "paper": 13.0,
+      "json": 13.0,
+      "delta": 0.0
+    },
+    {
+      "name": "fifo_f3",
+      "status": "OK",
+      "paper": 1940,
+      "json": 1940.0,
+      "delta": 0.0
+    },
+    {
+      "name": "combined_pareto_size",
+      "status": "OK",
+      "paper": 104,
+      "json": 104,
+      "delta": 0.0
+    },
+    {
+      "name": "min_f1_sol_f1",
+      "status": "OK",
+      "paper": 8.7884,
+      "json": 8.7884,
+      "delta": 0.0
+    },
+    {
+      "name": "min_f1_sol_f3",
+      "status": "OK",
+      "paper": 680,
+      "json": 680.0,
+      "delta": 0.0
+    },
+    {
+      "name": "min_f2_sol_f2",
+      "status": "OK",
+      "paper": 2.0,
+      "json": 2.0,
+      "delta": 0.0
+    },
+    {
+      "name": "taguchi_grand_mean_sn",
+      "status": "OK",
+      "paper": 109.46,
+      "json": 109.46311920051308,
+      "delta": 0.0031192005130833422
+    },
+    {
+      "name": "policy_f2_years",
+      "status": "OK",
+      "paper": 7.59,
+      "json": 7.5902,
+      "delta": 0.00020000000000042206
+    },
+    {
+      "name": "equity_wait_std_fifo",
+      "status": "OK",
+      "paper": 3.14,
+      "json": 3.143969308213077,
+      "delta": 0.00396930821307695
+    },
+    {
+      "name": "equity_wait_std_front_best",
+      "status": "OK",
+      "paper": 0.75,
+      "json": 0.7516129321225241,
+      "delta": 0.0016129321225241133
+    },
+    {
+      "name": "equity_gini_fifo",
+      "status": "OK",
+      "paper": 0.79,
+      "json": 0.7943060426035153,
+      "delta": 0.004306042603515303
+    },
+    {
+      "name": "equity_gini_front_best",
+      "status": "OK",
+      "paper": 0.17,
+      "json": 0.1739987144130255,
+      "delta": 0.003998714413025489
+    },
+    {
+      "name": "equity_jain_fifo",
+      "status": "OK",
+      "paper": 0.8,
+      "json": 0.804036826045409,
+      "delta": 0.004036826045409003
+    },
+    {
+      "name": "equity_jain_front_best",
+      "status": "OK",
+      "paper": 0.94,
+      "json": 0.944293192892489,
+      "delta": 0.004293192892489084
+    },
+    {
+      "name": "rank_perm_nsga2_visa",
+      "status": "OK",
+      "paper": 1.6,
+      "json": 1.6,
+      "delta": 0.0
+    },
+    {
+      "name": "rank_discrete_visa",
+      "status": "OK",
+      "paper": 2.23,
+      "json": 2.2333333333333334,
+      "delta": 0.0033333333333334103
+    },
+    {
+      "name": "rank_perm_moead_visa",
+      "status": "OK",
+      "paper": 2.53,
+      "json": 2.533333333333333,
+      "delta": 0.0033333333333334103
+    },
+    {
+      "name": "rank_random_visa",
+      "status": "OK",
+      "paper": 4.2,
+      "json": 4.2,
+      "delta": 0.0
+    },
+    {
+      "name": "rank_mohho_visa",
+      "status": "OK",
+      "paper": 4.67,
+      "json": 4.666666666666667,
+      "delta": -0.0033333333333329662
+    },
+    {
+      "name": "rank_nsga2_visa",
+      "status": "OK",
+      "paper": 5.77,
+      "json": 5.766666666666667,
+      "delta": -0.0033333333333329662
+    },
+    {
+      "name": "competent_hv_mean",
+      "status": "OK",
+      "paper": 316347,
+      "json": 316347.1,
+      "delta": 0.09999999997671694
+    },
+    {
+      "name": "competent_vs_random_pct",
+      "status": "OK",
+      "paper": 2.0,
+      "json": 1.98,
+      "delta": -0.020000000000000018
+    },
+    {
+      "name": "competent_beats_random",
+      "status": "OK",
+      "paper": true,
+      "json": true,
+      "delta": 0.0
+    },
+    {
+      "name": "naive_beats_random",
+      "status": "OK",
+      "paper": false,
+      "json": false,
+      "delta": 0.0
+    },
+    {
+      "name": "competent_zdt2_validation",
+      "status": "OK",
+      "paper": 0.99,
+      "json": 0.9956,
+      "delta": 0.005600000000000049
+    },
+    {
+      "name": "tau_nsga2",
+      "status": "OK",
+      "paper": 0.99,
+      "json": 0.9898,
+      "delta": -0.00019999999999997797
+    },
+    {
+      "name": "hv_tau_spearman_rho",
+      "status": "OK",
+      "paper": -0.21,
+      "json": -0.213,
+      "delta": -0.0030000000000000027
+    },
+    {
+      "name": "hv_tau_correlation_weak",
+      "status": "OK",
+      "paper": true,
+      "json": true,
+      "delta": 0.0
+    },
+    {
+      "name": "c2x2_order_nds_hv",
+      "status": "OK",
+      "paper": 315730,
+      "json": 315730.4,
+      "delta": 0.40000000002328306
+    },
+    {
+      "name": "c2x2_order_gated_hv",
+      "status": "OK",
+      "paper": 304126,
+      "json": 304126.0,
+      "delta": 0.0
+    },
+    {
+      "name": "c2x2_near_nds_hv",
+      "status": "OK",
+      "paper": 305892,
+      "json": 305892.3,
+      "delta": 0.29999999998835847
+    },
+    {
+      "name": "c2x2_near_gated_hv",
+      "status": "OK",
+      "paper": 304760,
+      "json": 304760.0,
+      "delta": 0.0
+    },
+    {
+      "name": "c2x2_random_hv",
+      "status": "OK",
+      "paper": 310214,
+      "json": 310214.2,
+      "delta": 0.20000000001164153
+    },
+    {
+      "name": "c2x2_order_nds_vs_random_pct",
+      "status": "OK",
+      "paper": 1.78,
+      "json": 1.78,
+      "delta": 0.0
+    },
+    {
+      "name": "c2x2_order_nds_A12",
+      "status": "OK",
+      "paper": 0.791,
+      "json": 0.791,
+      "delta": 0.0
+    },
+    {
+      "name": "c2x2_only_order_nds_wins",
+      "status": "OK",
+      "paper": true,
+      "json": true,
+      "delta": 0.0
+    },
+    {
+      "name": "c2x2_eta2_operator",
+      "status": "OK",
+      "paper": 0.076,
+      "json": 0.0758,
+      "delta": -0.00019999999999999185
+    },
+    {
+      "name": "c2x2_eta2_selection",
+      "status": "OK",
+      "paper": 0.145,
+      "json": 0.1452,
+      "delta": 0.00020000000000000573
+    },
+    {
+      "name": "c2x2_eta2_interaction",
+      "status": "OK",
+      "paper": 0.098,
+      "json": 0.0982,
+      "delta": 0.00019999999999999185
+    },
+    {
+      "name": "c2x2_interaction_significant",
+      "status": "OK",
+      "paper": true,
+      "json": true,
+      "delta": 0.0
+    },
+    {
+      "name": "struct_competent_knapsack_pos",
+      "status": "OK",
+      "paper": 1,
+      "json": 1,
+      "delta": 0.0
+    },
+    {
+      "name": "struct_competent_knapsack_rank",
+      "status": "OK",
+      "paper": 1.13,
+      "json": 1.133,
+      "delta": 0.0030000000000001137
+    },
+    {
+      "name": "struct_competent_knapsack_perm_best",
+      "status": "OK",
+      "paper": false,
+      "json": false,
+      "delta": 0.0
+    },
+    {
+      "name": "struct_competent_visa_pos",
+      "status": "OK",
+      "paper": 2,
+      "json": 2,
+      "delta": 0.0
+    },
+    {
+      "name": "struct_competent_tsp_pos",
+      "status": "OK",
+      "paper": 5,
+      "json": 5,
+      "delta": 0.0
+    },
+    {
+      "name": "struct_competent_flowshop_pos",
+      "status": "OK",
+      "paper": 2,
+      "json": 2,
+      "delta": 0.0
+    }
+  ],
+  "tex_inventory_count": 0,
+  "tex_inventory_sample": []
+}

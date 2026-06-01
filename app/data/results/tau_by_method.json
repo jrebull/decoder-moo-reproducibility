@@ -1,0 +1,47 @@
+{
+  "seed": 1,
+  "pairs": 400,
+  "snapshots": [
+    1,
+    50,
+    150,
+    300,
+    499
+  ],
+  "methods": {
+    "nsga2_realcoded": {
+      "tau_mean": 0.9898,
+      "tau_std": 0.0066,
+      "operator": "continuous"
+    },
+    "naive_mohho": {
+      "tau_mean": -0.1536,
+      "tau_std": 0.1605,
+      "operator": "continuous"
+    },
+    "competent_mohho": {
+      "tau_mean": -0.331,
+      "tau_std": 0.1205,
+      "operator": "continuous"
+    },
+    "perm_nsga2": {
+      "tau_mean": 0.2837,
+      "tau_std": 0.2209,
+      "operator": "permutation (OX+swap)"
+    },
+    "perm_moead": {
+      "tau_mean": 0.2837,
+      "tau_std": 0.2209,
+      "operator": "permutation (OX+swap)"
+    },
+    "discrete_mohho": {
+      "tau_mean": 0.2837,
+      "tau_std": 0.2209,
+      "operator": "permutation (OX+swap)"
+    },
+    "random_restart": {
+      "tau_mean": null,
+      "operator": "none (independent sampling)"
+    }
+  }
+}
